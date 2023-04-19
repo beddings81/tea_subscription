@@ -19,7 +19,7 @@ describe 'New subscription endpoint' do
         
         expect(Subscription.count).to eq(0)
 
-        post "/subscriptions", headers: headers, params: JSON.generate(subscription: subscription_params)
+        post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription: subscription_params)
 
         response_body = JSON.parse(response.body, symbolize_names: true)
 
@@ -74,7 +74,7 @@ describe 'New subscription endpoint' do
         
         expect(Subscription.count).to eq(0)
 
-        post "/subscriptions", headers: headers, params: JSON.generate(subscription: subscription_params)
+        post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription: subscription_params)
 
         response_body = JSON.parse(response.body, symbolize_names: true)
 
@@ -105,7 +105,7 @@ describe 'New subscription endpoint' do
         
         expect(Subscription.count).to eq(0)
 
-        post "/subscriptions", headers: headers, params: JSON.generate(subscription: subscription_params)
+        post "/api/v1/subscriptions", headers: headers, params: JSON.generate(subscription: subscription_params)
 
         response_body = JSON.parse(response.body, symbolize_names: true)
 
