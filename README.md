@@ -1,19 +1,21 @@
-# Tea Service
+# Tea Subscription
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
+* Ruby Version
+    2.7.4
+* Rails Version
+    5.2.8.1
+    
 * Database initialization
+    `rails db:{create,migrate}`
+    
+* Run Test Suite
+    `bundle exec rspec`
+## Database
+<img width="1076" alt="Screenshot 2023-04-19 at 12 01 11 PM" src="https://user-images.githubusercontent.com/111210465/233160752-eb69d365-d05f-4963-801f-ff766955c901.png">
+
 
 ## New Subscription
 ### POST '/api/v1/subscriptions'
@@ -53,3 +55,8 @@ response body:
     }
 }
 ```
+
+## Cancel a Subscription
+
+
+## List all Subscriptions for a Customer
