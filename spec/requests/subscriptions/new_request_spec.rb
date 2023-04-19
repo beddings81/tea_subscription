@@ -86,7 +86,6 @@ describe 'New subscription endpoint' do
         expect(response_body).to have_key(:error)
         expect(response_body[:error]).to be_a(Array)
         expect(response_body[:error][0]).to have_key(:title)
-        expect(response_body[:error][0]).to have_key(:title)
         expect(response_body[:error][0]).to have_key(:status)
       end
 
